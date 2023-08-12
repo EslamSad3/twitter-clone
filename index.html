@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist.css" />
+  </head>
+  <body class="bg-white dark:bg-dim-900">
+    <div class="container mx-auto h-screen flex xl:max-w-[1200px]">
+      <!-- LEFT -->
+      <div class="xl:w-1/5 w-20 h-full flex flex-col xl:pr-4">
+        <!-- LOGO -->
+        <a href="" class="link-active my-2">
+          <i class="fa-brands fa-twitter text-4xl"></i>
+        </a>
+
+        <!-- NAV -->
+        <nav class="mt-5">
+          <a href="" class="link-active mb-8">
+            <i class="fa-solid fa-house text-xl"></i>
+            <span class="icon font-bold">Home</span>
+          </a>
+
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-hashtag text-xl"></i>
+            <span class="icon">Explore</span>
+          </a>
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-bell text-xl"></i>
+            <span class="icon">Notifications</span>
+          </a>
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-envelope text-xl"></i>
+            <span class="icon">Messages</span>
+          </a>
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-bookmark text-xl"></i>
+            <span class="icon">Lists</span>
+          </a>
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-list-ul text-xl"></i>
+            <span class="icon">Communities</span>
+          </a>
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-check text-xl"></i>
+            <span class="icon">Verified</span>
+          </a>
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-user text-xl"></i>
+            <span class="icon">Profile</span>
+          </a>
+          <a href="" class="link mb-8">
+            <i class="fa-solid fa-ellipsis text-xl"></i>
+            <span class="icon">More</span>
+          </a>
+        </nav>
+        <!-- NAV -->
+
+        <!-- Button -->
+        <a href="" class="post mb-10">
+          <i class="fa-solid fa-feather text-xl block xl:hidden"></i>
+          <span class="icon xl:ml-0">Post</span>
+        </a>
+        <!-- Button -->
+
+        <!-- Account -->
+        <div class=" text-white flex justify-around items-center mb-10 ">
+          <div class="">
+            <img
+              src="./imgs/user.png"
+              alt="user"
+              class="w-11 h-11 rounded-full cursor-pointer"
+            />
+          </div>
+          <div class="accinfo hidden xl:block">
+            <h2 class="font-extrabold">Eslam Saad</h2>
+            <h6 class="text-gray-400">@eslam.sa3d96</h6>
+          </div>
+          <div class="arrow hidden xl:block">
+            <i class="fa-solid fa-chevron-down cursor-pointer"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div class="w-full xl:w-1/2 h-screen overflow-y-auto">Middle</div>
+
+      <!-- RIGHT -->
+      <div class="hidden w-[30%] xl:block">RIGHT</div>
+    </div>
+  </body>
+</html>
