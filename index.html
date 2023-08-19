@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -91,7 +91,7 @@
       </div>
 
       <!-- Middle -->
-      <div class="w-full xl:w-1/2 h-full overflow-y-auto">
+      <div class="w-full xl:w-1/2 h-full overflow-y-auto ">
         <!-- Sticky Header -->
         <div class="header sticky top-0 z-50">
           <h4 class="text-gray-800 dark:text-gray-100 font-bold">Home</h4>
@@ -152,15 +152,151 @@
 
         <!-- Tweet Section -->
 
-        <div class="border ">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="border border-gray-200 dark:border-dim-200 cursor-pointer pb-4">
+          <div class="flex p-4 pb-0">
+            <img src="./imgs/user.png" class="w-11 h-11 rounded-full" alt="" >
+            <p class="mx-2 flex flex-shrink-0 items-center font-medium text-gray-800 dark:text-white">
+              Eslam Saad <span class="mx-2 text-sm   text-gray-500 ">@eeslam.sa3d96</span>
+            </p>
+          </div>
+          <div class="pl-8 xl:pl-16 pr-4">
+            <p class="w-auto font-medium text-gray-800 dark:text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos explicabo, hic voluptatum officiis dignissimos quo eum deserunt ipsam dolorum, ratione quia excepturi! Porro nesciunt, quam assumenda cum animi labore beatae.
+              <a href="#" class="text-blue-400">#mistakes</a>
+            </p>
+            <img src="./imgs//post.jpg" alt="" class="rounded-2xl border border-gray-600 my-3 mr-2 w-full">
+            <div class="flex items-center w-full justify-between">
+              <div class="post-icon hover:text-blue-500">
+                <i class="fa-solid fa-comment mr-2 text-lg"></i>
+                12.3k
+              </div>
+              <div class="post-icon hover:text-green-500">
+                <i class="fa-solid fa-retweet mr-2 text-lg"></i>
+                14k
+              </div>
+              <div class="post-icon hover:text-red-500">
+                <i class="fa-solid fa-heart mr-2 text-lg"></i>
+                14k
+              </div>
+              <div class="post-icon hover:text-blue-500">
+                <i class="fa-solid fa-share mr-2 text-lg"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Toggler -->
+        <div class="py-2 border border-gray-200 dark:border-dim-200 bg-gray-50 dark:bg-dim-300">
+          <div class="text-center p-6 bg-white dark:bg-dim-900 border-b border-t border-gray-200 dark:border-dim-200">
+            <h3 class="dark:text-white text-gray-900 text-2xl font-bold mb-2">Customize Your view</h3>
+            <p class="text-gray-500 mb-5 text-sm">
+             Manage Your Font Sioze, color and Background. These settings affect all the Twitter accounts on this browser
+            </p>
+            <a href="javascript:void(0)" onclick="document.querySelector('html').classList.toggle('dark')" class="mx-auto w-11 h-11 xl:w-48 flex justify-center bg-blue-400 py-2 rounded-full">
+              <i class="fa-solid fa-cloud-moon block xl:hidden text-lg"></i>
+              <span class="hidden xl:block font-bold text-md  ">Toggle Dark Mode</span>
+            </a>
+          </div>
+          <!-- Spinner -->
+          <div class="p-4  border-gray-200 dark:border-gray-700">
+            <div class=" shadow rounded-md p-4 max-w-sm w-full mx-auto">
+              <div class="animate-pulse flex space-x-4">
+                <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+                <div class="flex-1 space-y-6 py-1">
+                  <div class="h-2 bg-slate-700 rounded"></div>
+                  <div class="space-y-3">
+                    <div class="grid grid-cols-3 gap-4">
+                      <div class="h-2 bg-slate-700 rounded col-span-2"></div>
+                      <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                    </div>
+                    <div class="h-2 bg-slate-700 rounded"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- RIGHT -->
-      <div class="hidden w-[30%] xl:block">RIGHT</div>
+      <div class="hidden w-[30%] xl:block">
+        <!-- Search -->
+        <div class="relative m-2">
+          <i class="fa-solid fa-search text-gray-600 absolute left-4 top-1/2 -translate-y-1/2"></i>
+          <input type="text" class="w-full bg-gray-200 dark:bg-dim-400 text-gray-100 focus:outline-none font-normal h-9 pl-12 text-sm rounded-full" placeholder="Search Twitter">
+        </div>
+
+        <!-- Hashtags -->
+        <div class="flex flex-col justify-start bg-gray-50 dark:bg-dim-700 rounded-2xl m-2">
+          <h3 class="text-gray-900 dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200">What's Happening</h3>
+          <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+            <h4 class="font-bold text-gray-800 dark:text-white">#Palestine</h4>
+            <p class="text-xs text-gray-400">29.2K</p>
+          </div>
+          <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+            <h4 class="font-bold text-gray-800 dark:text-white">#Palestine</h4>
+            <p class="text-xs text-gray-400">29.2K</p>
+          </div>
+          <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+            <h4 class="font-bold text-gray-800 dark:text-white">#Palestine</h4>
+            <p class="text-xs text-gray-400">29.2K</p>
+          </div>
+          <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+            <h4 class="font-bold text-gray-800 dark:text-white">#Palestine</h4>
+            <p class="text-xs text-gray-400">29.2K</p>
+          </div>
+          <div class="text-blue-400 p-3 cursor-pointer">Show more</div>
+        </div>
+
+        <!-- Follow -->
+        <div class="flex flex-col justify-start bg-gray-50 dark:bg-dim-700 rounded-2xl m-2">
+          <h3 class="text-gray-900 dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200">Who to Follo</h3>
+          <div class="flex justify-between items-center p-5 border-b  border-gray-200 dark:border-dim-200">
+            <div class="flex">
+              <img src="./imgs/user.png" alt="" class="w-10 h-10 rounded-full">
+              <div class="ml-2 text-sm">
+                <h5 class="text-gray-900 dark:text-white font-bold">Eslam Saad</h5>
+                <p class="text-gray-400 text-sm">@eslam.sa3d96</p>
+              </div>
+            </div>
+            <a href="#" class="text-xs font-bold text-blue-400 px-4 py-1 rounded-full border-2 border-blue-400">Follow</a>
+          </div>
+          <div class="flex justify-between items-center p-5 border-b  border-gray-200 dark:border-dim-200">
+            <div class="flex">
+              <img src="./imgs/user.png" alt="" class="w-10 h-10 rounded-full">
+              <div class="ml-2 text-sm">
+                <h5 class="text-gray-900 dark:text-white font-bold">Eslam Saad</h5>
+                <p class="text-gray-400 text-sm">@eslam.sa3d96</p>
+              </div>
+            </div>
+            <a href="#" class="text-xs font-bold text-blue-400 px-4 py-1 rounded-full border-2 border-blue-400">Follow</a>
+          </div>
+          <div class="flex justify-between items-center p-5 border-b  border-gray-200 dark:border-dim-200">
+            <div class="flex">
+              <img src="./imgs/user.png" alt="" class="w-10 h-10 rounded-full">
+              <div class="ml-2 text-sm">
+                <h5 class="text-gray-900 dark:text-white font-bold">Eslam Saad</h5>
+                <p class="text-gray-400 text-sm">@eslam.sa3d96</p>
+              </div>
+            </div>
+            <a href="#" class="text-xs font-bold text-blue-400 px-4 py-1 rounded-full border-2 border-blue-400">Follow</a>
+          </div>
+                    <!-- Spinner -->
+                    <div class="p-4  border-gray-200 dark:border-gray-700 border-b  border-gray-200 dark:border-dim-200">
+                      <div class=" shadow rounded-md p-4 max-w-sm w-full mx-auto">
+                        <div class="animate-pulse flex space-x-4">
+                          <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+                          <div class="flex-1 space-y-6 py-1">
+                            <div class="h-2 bg-slate-700 rounded"></div>
+                            <div class="space-y-3">
+                              <div class="h-2 bg-slate-700 rounded"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          <div class="text-blue-400 p-3 cursor-pointer">Show more</div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
